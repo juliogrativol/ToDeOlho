@@ -1,0 +1,12 @@
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\bin\Debug\netstandard2.0\ToDeOlho.deps.json
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\bin\Debug\netstandard2.0\ToDeOlho.dll
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\bin\Debug\netstandard2.0\ToDeOlho.pdb
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\ToDeOlho.csprojAssemblyReference.cache
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\ToDeOlho.csproj.CoreCompileInputs.cache
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\ToDeOlho.AssemblyInfoInputs.cache
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\ToDeOlho.AssemblyInfo.cs
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\ToDeOlho.dll
+C:\Users\jthomaz\source\repos\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Debug\netstandard2.0\ToDeOlho.pdb
