@@ -183,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj",
       "projectName": "Autenticacao",
-      "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj",
+      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj",
       "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Autenticacao\\obj\\",
+      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Autenticacao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
