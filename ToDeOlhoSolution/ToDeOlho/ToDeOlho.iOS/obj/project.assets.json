@@ -1072,11 +1072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\ToDeOlho.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\ToDeOlho.iOS.csproj",
       "projectName": "ToDeOlho.iOS",
-      "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\ToDeOlho.iOS.csproj",
+      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\ToDeOlho.iOS.csproj",
       "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\obj\\",
+      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1093,8 +1093,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
-              "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
+            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
             }
           }
         }

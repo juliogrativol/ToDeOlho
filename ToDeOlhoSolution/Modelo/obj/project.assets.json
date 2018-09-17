@@ -436,11 +436,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Modelo\\Modelo.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Modelo\\Modelo.csproj",
       "projectName": "Modelo",
-      "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Modelo\\Modelo.csproj",
+      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Modelo\\Modelo.csproj",
       "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Modelo\\obj\\",
+      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Modelo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -17,9 +17,11 @@ namespace ToDeOlho
 
         private void login_Clicked(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.email = Email_entry.Text;
-            login.senha = Senha_entry.Text;
+            Login login = new Login
+            {
+                email = Email_entry.Text,
+                senha = Senha_entry.Text
+            };
 
             //DisplayAlert("Login", login.email, "OK");
 

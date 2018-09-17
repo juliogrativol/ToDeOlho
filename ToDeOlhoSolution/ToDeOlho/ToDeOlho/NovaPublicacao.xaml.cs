@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +18,17 @@ namespace ToDeOlho
 			InitializeComponent ();
 		}
 
-        private void btn_salvarPublicacao_Clicked(object sender, EventArgs e)
+        private async void btn_salvarPublicacao_Clicked(object sender, EventArgs e)
         {
+            Publicacao publicacao = new Publicacao();
+            publicacao.Titulo = Titulo_entry.Text;
+            publicacao.Data = DateTime.Now.ToString("dd/MM/yyyy");
 
+            Repository repository = Repository.Instance;
+
+            repository.addItems(publicacao);
+
+            await Navigation.PopAsync(true);
         }
     }
 }

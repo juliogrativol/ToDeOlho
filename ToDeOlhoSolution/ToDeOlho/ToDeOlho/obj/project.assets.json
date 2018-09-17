@@ -735,11 +735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj",
       "projectName": "ToDeOlho",
-      "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj",
+      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj",
       "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\obj\\",
+      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -758,11 +758,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj": {
-              "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj"
+            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj"
             },
-            "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Modelo\\Modelo.csproj": {
-              "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\Modelo\\Modelo.csproj"
+            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Modelo\\Modelo.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Modelo\\Modelo.csproj"
             }
           }
         }

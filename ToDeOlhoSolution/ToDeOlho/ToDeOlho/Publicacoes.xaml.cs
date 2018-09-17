@@ -18,24 +18,9 @@ namespace ToDeOlho
         public Publicacoes()
         {
             InitializeComponent();
+            Repository repository = Repository.Instance;
 
-            Items = new ObservableCollection<Publicacao>();
-
-            Publicacao publicacao = new Publicacao();
-            publicacao.Titulo = "Buraco na minha rua";
-            publicacao.Data = "17/09/2018";
-
-            Publicacao publicacao2 = new Publicacao();
-            publicacao2.Titulo = "Cadê o lixeiro";
-            publicacao2.Data = "17/09/2018";
-
-            Publicacao publicacao3 = new Publicacao();
-            publicacao3.Titulo = "Quase quebrei meu carro";
-            publicacao3.Data = "17/09/2018";
-
-            Items.Add(publicacao);
-            Items.Add(publicacao2);
-            Items.Add(publicacao3);
+            Items = repository.getItems();
 
             MyListView.ItemsSource = Items;
         }

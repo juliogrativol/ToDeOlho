@@ -989,11 +989,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
       "projectName": "ToDeOlho.Android",
-      "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
+      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
       "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\obj\\",
+      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1010,8 +1010,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
-              "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
+            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
             }
           }
         }
