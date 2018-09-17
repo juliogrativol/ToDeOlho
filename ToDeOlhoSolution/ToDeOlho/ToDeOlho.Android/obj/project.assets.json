@@ -425,7 +425,6 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.2.0.809874-pre3"
         },
@@ -973,7 +972,6 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
-      "System.Drawing.Primitives >= 4.3.0",
       "ToDeOlho >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
@@ -1020,10 +1018,6 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
-          "System.Drawing.Primitives": {
-            "target": "Package",
-            "version": "[4.3.0, )"
-          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
             "version": "[27.0.2.1, )"

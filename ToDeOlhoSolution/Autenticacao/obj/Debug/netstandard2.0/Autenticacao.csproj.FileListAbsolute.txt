@@ -9,7 +9,6 @@ C:\Users\jthomaz\source\repos\ToDeOlhoSolution\Autenticacao\obj\Debug\netstandar
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Debug\netstandard2.0\Autenticacao.deps.json
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Debug\netstandard2.0\Autenticacao.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Debug\netstandard2.0\Autenticacao.pdb
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Debug\netstandard2.0\Autenticacao.csprojAssemblyReference.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Debug\netstandard2.0\Autenticacao.csproj.CoreCompileInputs.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Debug\netstandard2.0\Autenticacao.AssemblyInfoInputs.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Debug\netstandard2.0\Autenticacao.AssemblyInfo.cs

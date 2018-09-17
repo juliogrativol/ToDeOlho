@@ -723,7 +723,6 @@
       "Autenticacao >= 1.0.0",
       "Modelo >= 1.0.0",
       "NETStandard.Library >= 2.0.1",
-      "System.Drawing.Primitives >= 4.3.0",
       "Xamarin.Essentials >= 0.10.0-preview",
       "Xamarin.Forms >= 3.2.0.809874-pre3"
     ]
@@ -781,10 +780,6 @@
             "target": "Package",
             "version": "[2.0.1, )",
             "autoReferenced": true
-          },
-          "System.Drawing.Primitives": {
-            "target": "Package",
-            "version": "[4.3.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

@@ -187,7 +187,6 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.2.0.809874-pre3"
         },
@@ -385,7 +384,6 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.2.0.809874-pre3"
         },
@@ -583,7 +581,6 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.2.0.809874-pre3"
         },
@@ -781,7 +778,6 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.2.0.809874-pre3"
         },
