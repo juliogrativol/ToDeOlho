@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "System.Drawing.Primitives/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -387,6 +396,9 @@
       "Autenticacao/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Drawing.Primitives": "4.3.0"
+        },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
         },
@@ -394,11 +406,26 @@
           "bin/placeholder/Autenticacao.dll": {}
         }
       },
+      "Modelo/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Drawing.Primitives": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Modelo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modelo.dll": {}
+        }
+      },
       "ToDeOlho/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Autenticacao": "1.0.0",
+          "Modelo": "1.0.0",
+          "System.Drawing.Primitives": "4.3.0",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.2.0.809874-pre3"
         },
@@ -412,6 +439,33 @@
     }
   },
   "libraries": {
+    "System.Drawing.Primitives/4.3.0": {
+      "sha512": "1QU/c35gwdhvj77fkScXQQbjiVAqIL3fEYn/19NE0CV/ic5TN5PyWAft8HsrbRd4SBLEoErNCkWSzMDc0MmbRw==",
+      "type": "package",
+      "path": "system.drawing.primitives/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/System.Drawing.Primitives.dll",
+        "lib/netstandard1.1/System.Drawing.Primitives.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Drawing.Primitives.dll",
+        "ref/netstandard1.1/System.Drawing.Primitives.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.drawing.primitives.4.3.0.nupkg.sha512",
+        "system.drawing.primitives.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
       "type": "package",
@@ -906,6 +960,11 @@
       "path": "../../Autenticacao/Autenticacao.csproj",
       "msbuildProject": "../../Autenticacao/Autenticacao.csproj"
     },
+    "Modelo/1.0.0": {
+      "type": "project",
+      "path": "../../Modelo/Modelo.csproj",
+      "msbuildProject": "../../Modelo/Modelo.csproj"
+    },
     "ToDeOlho/1.0.0": {
       "type": "project",
       "path": "../ToDeOlho/ToDeOlho.csproj",
@@ -914,6 +973,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "System.Drawing.Primitives >= 4.3.0",
       "ToDeOlho >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
@@ -929,11 +989,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
       "projectName": "ToDeOlho.Android",
-      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
+      "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
       "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\obj\\",
+      "outputPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -950,8 +1010,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
-              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
+            "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\source\\repos\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
             }
           }
         }
@@ -960,6 +1020,10 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "System.Drawing.Primitives": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
             "version": "[27.0.2.1, )"

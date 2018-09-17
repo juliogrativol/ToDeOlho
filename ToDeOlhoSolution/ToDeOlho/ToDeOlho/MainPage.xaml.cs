@@ -21,7 +21,10 @@ namespace ToDeOlho
             login.email = Email_entry.Text;
             login.senha = Senha_entry.Text;
 
-            DisplayAlert("Login", login.email, "OK");
+            //DisplayAlert("Login", login.email, "OK");
+
+            Navigation.PushAsync(new Publicacoes());
+
         }
     }
 }
