@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{972E2785-E04A-4AF6-8F2B-2B20B7139E0B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDeOlho/ToDeOlho/MainPage.xaml.cs">
+    <Files>
+      <File FileName="ToDeOlho/ToDeOlho/MainPage.xaml.cs" Line="60" Column="54" />
+      <File FileName="Modelo/Login.cs" Line="7" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/MainPage.xaml.cs" relfile="ToDeOlho/ToDeOlho/MainPage.xaml.cs" line="67" column="57" />
+      <Breakpoint file="/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/MainPage.xaml.cs" relfile="ToDeOlho/ToDeOlho/MainPage.xaml.cs" line="54" column="1" />
+      <Breakpoint file="/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/MainPage.xaml.cs" relfile="ToDeOlho/ToDeOlho/MainPage.xaml.cs" line="49" column="1" />
+      <Breakpoint file="/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/MainPage.xaml.cs" relfile="ToDeOlho/ToDeOlho/MainPage.xaml.cs" line="58" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.0_220-_220Mobile.ToDeOlho.Android PreferredExecutionTarget="0bbc14a6-2d80-44ac-8e78-b2dbaf89d1fb" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MultiItemStartupConfigurations />
+</Properties>

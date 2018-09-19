@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.809874-pre3" />
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
@@ -91,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ToDeOlho\ToDeOlho.csproj">
-      <Project>{324D48B5-1C22-4BB9-87AF-80A1FAA49224}</Project>
+      <Project>{74057D7B-710A-449E-84D8-98D5BF3FD8D5}</Project>
       <Name>ToDeOlho</Name>
     </ProjectReference>
   </ItemGroup>

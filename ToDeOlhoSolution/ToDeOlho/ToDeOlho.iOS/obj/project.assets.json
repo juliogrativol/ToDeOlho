@@ -2,6 +2,24 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.Drawing.Primitives/4.3.0": {
         "type": "package",
         "compile": {
@@ -32,7 +50,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.2.0.809874-pre3": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -187,8 +205,10 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
+          "Newtonsoft.Json": "11.0.2",
+          "RestSharp": "106.4.0",
           "Xamarin.Essentials": "0.10.0-preview",
-          "Xamarin.Forms": "3.2.0.809874-pre3"
+          "Xamarin.Forms": "3.2.0.839982"
         },
         "compile": {
           "bin/placeholder/ToDeOlho.dll": {}
@@ -199,6 +219,24 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.Drawing.Primitives/4.3.0": {
         "type": "package",
         "compile": {
@@ -229,7 +267,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.2.0.809874-pre3": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -384,8 +422,10 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
+          "Newtonsoft.Json": "11.0.2",
+          "RestSharp": "106.4.0",
           "Xamarin.Essentials": "0.10.0-preview",
-          "Xamarin.Forms": "3.2.0.809874-pre3"
+          "Xamarin.Forms": "3.2.0.839982"
         },
         "compile": {
           "bin/placeholder/ToDeOlho.dll": {}
@@ -396,6 +436,24 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.Drawing.Primitives/4.3.0": {
         "type": "package",
         "compile": {
@@ -426,7 +484,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.2.0.809874-pre3": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -581,8 +639,10 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
+          "Newtonsoft.Json": "11.0.2",
+          "RestSharp": "106.4.0",
           "Xamarin.Essentials": "0.10.0-preview",
-          "Xamarin.Forms": "3.2.0.809874-pre3"
+          "Xamarin.Forms": "3.2.0.839982"
         },
         "compile": {
           "bin/placeholder/ToDeOlho.dll": {}
@@ -593,6 +653,24 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.Drawing.Primitives/4.3.0": {
         "type": "package",
         "compile": {
@@ -623,7 +701,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.2.0.809874-pre3": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -778,8 +856,10 @@
         "dependencies": {
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
+          "Newtonsoft.Json": "11.0.2",
+          "RestSharp": "106.4.0",
           "Xamarin.Essentials": "0.10.0-preview",
-          "Xamarin.Forms": "3.2.0.809874-pre3"
+          "Xamarin.Forms": "3.2.0.839982"
         },
         "compile": {
           "bin/placeholder/ToDeOlho.dll": {}
@@ -791,6 +871,48 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "RestSharp/106.4.0": {
+      "sha512": "3n3y37qEhAQ7FzT7VKT2RI/1OhZjEjaghwsOtRsm8rVq3LQqldkt6Rj3BIY19HFxV2h/ZqOlm4yhReDfELvNKg==",
+      "type": "package",
+      "path": "restsharp/106.4.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.4.0.nupkg.sha512",
+        "restsharp.nuspec"
+      ]
+    },
     "System.Drawing.Primitives/4.3.0": {
       "sha512": "1QU/c35gwdhvj77fkScXQQbjiVAqIL3fEYn/19NE0CV/ic5TN5PyWAft8HsrbRd4SBLEoErNCkWSzMDc0MmbRw==",
       "type": "package",
@@ -890,10 +1012,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/3.2.0.809874-pre3": {
-      "sha512": "wp3vSLE/buUaSKW4gSMXQqISjLzpWiS3g61kWhTLHAgErx30WpG/UiI7pLfwLsoksf79fTOyy/M11ClLbTcxHQ==",
+    "Xamarin.Forms/3.2.0.839982": {
+      "sha512": "BtiTMpmTqkzPPlGvQEVrO51kC1e/vieOaGHB+bKUULER0ruf2EQ92zVRwuvLop60g0WQQJ0Arj45TNCu6qCINQ==",
       "type": "package",
-      "path": "xamarin.forms/3.2.0.809874-pre3",
+      "path": "xamarin.forms/3.2.0.839982",
       "files": [
         ".signature.p7s",
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
@@ -1035,7 +1157,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.2.0.809874-pre3.nupkg.sha512",
+        "xamarin.forms.3.2.0.839982.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1059,38 +1181,35 @@
     "Xamarin.iOS,Version=v1.0": [
       "System.Drawing.Primitives >= 4.3.0",
       "ToDeOlho >= 1.0.0",
-      "Xamarin.Forms >= 3.2.0.809874-pre3"
+      "Xamarin.Forms >= 3.2.0.839982"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jthomaz\\.nuget\\packages\\": {}
+    "/Users/vitornunes/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\ToDeOlho.iOS.csproj",
+      "projectUniqueName": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho.iOS/ToDeOlho.iOS.csproj",
       "projectName": "ToDeOlho.iOS",
-      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\ToDeOlho.iOS.csproj",
-      "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.iOS\\obj\\",
+      "projectPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho.iOS/ToDeOlho.iOS.csproj",
+      "packagesPath": "/Users/vitornunes/.nuget/packages/",
+      "outputPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho.iOS/obj",
       "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\jthomaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/vitornunes/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
-              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
+            "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/ToDeOlho.csproj": {
+              "projectPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/ToDeOlho.csproj"
             }
           }
         }
@@ -1101,11 +1220,11 @@
         "dependencies": {
           "System.Drawing.Primitives": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "4.3.0"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.2.0.809874-pre3, )"
+            "version": "3.2.0.839982"
           }
         }
       }
