@@ -407,8 +407,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -422,8 +421,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Modelo.dll": {}

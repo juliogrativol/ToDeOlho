@@ -17,3 +17,4 @@ C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Release
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Release\netstandard2.0\ToDeOlho.csproj.CopyComplete
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Release\netstandard2.0\ToDeOlho.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Release\netstandard2.0\ToDeOlho.pdb
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho\obj\Release\netstandard2.0\NovoUsuario.xaml.g.cs

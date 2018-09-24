@@ -1,4 +1,3 @@
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Release\netstandard2.0\Modelo.csprojAssemblyReference.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Release\netstandard2.0\Modelo.csproj.CoreCompileInputs.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Release\netstandard2.0\Modelo.AssemblyInfoInputs.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Release\netstandard2.0\Modelo.AssemblyInfo.cs

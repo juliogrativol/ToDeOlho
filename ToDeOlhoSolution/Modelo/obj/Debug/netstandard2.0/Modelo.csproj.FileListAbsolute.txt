@@ -16,3 +16,12 @@ C:/Users/jthomaz/source/repos/ToDeOlhoSolution/Modelo/obj/Debug/netstandard2.0/M
 /Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/Modelo/obj/Debug/netstandard2.0/Modelo.AssemblyInfo.cs
 /Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/Modelo/obj/Debug/netstandard2.0/Modelo.dll
 /Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/Modelo/obj/Debug/netstandard2.0/Modelo.pdb
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\bin\Debug\netstandard2.0\Modelo.deps.json
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\bin\Debug\netstandard2.0\Modelo.dll
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\bin\Debug\netstandard2.0\Modelo.pdb
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Debug\netstandard2.0\Modelo.csprojAssemblyReference.cache
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Debug\netstandard2.0\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfoInputs.cache
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfo.cs
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Debug\netstandard2.0\Modelo.dll
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Modelo\obj\Debug\netstandard2.0\Modelo.pdb

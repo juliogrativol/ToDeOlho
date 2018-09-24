@@ -169,8 +169,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -184,8 +183,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Modelo.dll": {}
@@ -380,8 +378,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -395,8 +392,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Modelo.dll": {}
@@ -591,8 +587,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -606,8 +601,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Modelo.dll": {}
@@ -802,8 +796,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -817,8 +810,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
-          "System.Drawing.Primitives": "4.3.0",
-          "Xamarin.Essentials": "0.10.0-preview"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Modelo.dll": {}
@@ -1141,9 +1133,7 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "System.Drawing.Primitives >= 4.3.0",
       "ToDeOlho >= 1.0.0",
-      "Xamarin.Essentials >= 0.10.0-preview",
       "Xamarin.Forms >= 3.3.0.840541-pre1"
     ]
   },
@@ -1184,14 +1174,6 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
-          "System.Drawing.Primitives": {
-            "target": "Package",
-            "version": "[4.3.0, )"
-          },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[0.10.0-preview, )"
-          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.3.0.840541-pre1, )"

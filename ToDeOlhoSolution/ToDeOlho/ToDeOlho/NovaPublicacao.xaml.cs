@@ -28,7 +28,9 @@ namespace ToDeOlho
         {
             try
             {
-                var location = await Geolocation.GetLastKnownLocationAsync();
+                var level = Battery.ChargeLevel;
+
+                var location = await Geolocation.GetLocationAsync();
                 Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
             }
             catch (FeatureNotSupportedException fnsEx)
