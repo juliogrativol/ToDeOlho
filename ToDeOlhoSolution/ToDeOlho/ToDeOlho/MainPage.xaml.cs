@@ -39,5 +39,10 @@ namespace ToDeOlho
                 DisplayAlert("Atenção", ex.Message, "Ok");
             }
         }
+
+        private void Novo_btn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NovoUsuario());
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Autenticacao
+namespace Modelo
 {
     public class Login
     {

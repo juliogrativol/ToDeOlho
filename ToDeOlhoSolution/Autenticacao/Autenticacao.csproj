@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
-    <PackageReference Include="WebApiContrib.Formatting.JavaScriptSerializer" Version="0.9.4" />
   </ItemGroup>
 
   <ItemGroup>

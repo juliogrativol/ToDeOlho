@@ -26,6 +26,8 @@
             <Entry x:Name="Email_entry" Grid.Row="1" Placeholder="Email ou Telefone" PlaceholderColor="#bababa" FontSize="16"/>
             <Entry x:Name="Senha_entry" Grid.Row="2" Placeholder="Senha" PlaceholderColor="#bababa" FontSize="16" IsPassword="True"/>
             <Button x:Name="Login_btn" Text="LogIn" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3" Clicked="login_Clicked"/>
+            <Button x:Name="Novo_btn" Text="Cadastre-se" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="4" Clicked="Novo_btn_Clicked"/>
+            
             <Grid Grid.Row="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

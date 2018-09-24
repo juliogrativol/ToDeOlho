@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDeOlho.NovoUsuario">
+    <ContentPage.Content>
+        <StackLayout x:Name="BasicInfo" Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
+            <Label Text="Novo Usuário" FontSize="20"/>
+            <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="ic_mac.png" HeightRequest="70" VerticalOptions="EndAndExpand"/>
+                    <Entry x:Name="Login_entry" Grid.Row="1" Placeholder="Login" PlaceholderColor="#bababa" FontSize="16" MaxLength="50"/>
+                    <Entry x:Name="Senha_entry" Grid.Row="2" Placeholder="Senha" PlaceholderColor="#bababa" FontSize="16" IsPassword="true" MaxLength="10"/>
+                    <Button x:Name="NovoUsuario_btn" Text="Ok" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3" Clicked="NovoUsuario_btn_Clicked"/>
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

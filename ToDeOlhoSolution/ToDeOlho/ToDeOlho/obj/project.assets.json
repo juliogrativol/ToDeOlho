@@ -2,28 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Net.Http": "[2.0.20710, 2.1.0)",
-          "Newtonsoft.Json": "4.5.6"
-        },
-        "compile": {
-          "lib/net40/System.Net.Http.Formatting.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Net.Http.Formatting.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.0.20710": {
-        "type": "package",
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -109,18 +87,6 @@
           "ref/netstandard1.5/_._": {}
         }
       },
-      "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "4.0.20710"
-        },
-        "compile": {
-          "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll": {}
-        }
-      },
       "Xamarin.Essentials/0.10.0-preview": {
         "type": "package",
         "dependencies": {
@@ -155,8 +121,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
-          "WebApiContrib.Formatting.JavaScriptSerializer": "0.9.4"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -182,31 +147,6 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-      "sha512": "BwFtW0cGr8tg02XalvF8MmznOpYrhquD2eXWI0oF3LLSqLMFoFkb8Pmke/7SnqkiNc+YfsaUqdXEKbjhv1Ctrw==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.client/4.0.20710",
-      "files": [
-        "lib/net40/System.Net.Http.Formatting.dll",
-        "lib/net40/System.Net.Http.Formatting.xml",
-        "microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.client.nuspec"
-      ]
-    },
-    "Microsoft.Net.Http/2.0.20710": {
-      "sha512": "OsB/5QO9tYJRLYIgBOhRl4Tssh3pw7+UAO9tMGMBg63f98GfjsniVIwLWRC0vcRr/F6HLP/NvRlHyGBhtD7Bmw==",
-      "type": "package",
-      "path": "microsoft.net.http/2.0.20710",
-      "files": [
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "lib/net45/_._",
-        "microsoft.net.http.2.0.20710.nupkg.sha512",
-        "microsoft.net.http.nuspec"
-      ]
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -631,16 +571,6 @@
         "system.runtime.extensions.nuspec"
       ]
     },
-    "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
-      "sha512": "8+K9WEklfCIC+guM71L51adHPK+KkEXWWsVn0TQP435J8rdET6Ta1e+WsXg5gxdwI7Vx0R7zSaYQw8m8I0NsFg==",
-      "type": "package",
-      "path": "webapicontrib.formatting.javascriptserializer/0.9.4",
-      "files": [
-        "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll",
-        "webapicontrib.formatting.javascriptserializer.0.9.4.nupkg.sha512",
-        "webapicontrib.formatting.javascriptserializer.nuspec"
-      ]
-    },
     "Xamarin.Essentials/0.10.0-preview": {
       "sha512": "oA8oAHIHf4ymPPQoi7sLKF0704fFgwoqmQDy1G1kOxXrEZF0W5XpTXS2y2h4/RC/7bn0DzhTS6wiC90Om4YSHA==",
       "type": "package",
@@ -911,37 +841,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.WebApi.Client 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.AspNet.WebApi.Client",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.Net.Http 2.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'WebApiContrib.Formatting.JavaScriptSerializer 0.9.4' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "WebApiContrib.Formatting.JavaScriptSerializer",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

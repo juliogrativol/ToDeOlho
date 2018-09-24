@@ -2,16 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
-      "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Net.Http": "[2.0.20710, 2.1.0)",
-          "Newtonsoft.Json": "4.5.6"
-        }
-      },
-      "Microsoft.Net.Http/2.0.20710": {
-        "type": "package"
-      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -37,12 +27,6 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
-        }
-      },
-      "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "4.0.20710"
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -423,8 +407,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0",
-          "WebApiContrib.Formatting.JavaScriptSerializer": "0.9.4"
+          "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -467,31 +450,6 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-      "sha512": "BwFtW0cGr8tg02XalvF8MmznOpYrhquD2eXWI0oF3LLSqLMFoFkb8Pmke/7SnqkiNc+YfsaUqdXEKbjhv1Ctrw==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.client/4.0.20710",
-      "files": [
-        "lib/net40/System.Net.Http.Formatting.dll",
-        "lib/net40/System.Net.Http.Formatting.xml",
-        "microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.client.nuspec"
-      ]
-    },
-    "Microsoft.Net.Http/2.0.20710": {
-      "sha512": "OsB/5QO9tYJRLYIgBOhRl4Tssh3pw7+UAO9tMGMBg63f98GfjsniVIwLWRC0vcRr/F6HLP/NvRlHyGBhtD7Bmw==",
-      "type": "package",
-      "path": "microsoft.net.http/2.0.20710",
-      "files": [
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "lib/net45/_._",
-        "microsoft.net.http.2.0.20710.nupkg.sha512",
-        "microsoft.net.http.nuspec"
-      ]
-    },
     "Newtonsoft.Json/11.0.2": {
       "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
@@ -591,16 +549,6 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
-      "sha512": "8+K9WEklfCIC+guM71L51adHPK+KkEXWWsVn0TQP435J8rdET6Ta1e+WsXg5gxdwI7Vx0R7zSaYQw8m8I0NsFg==",
-      "type": "package",
-      "path": "webapicontrib.formatting.javascriptserializer/0.9.4",
-      "files": [
-        "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll",
-        "webapicontrib.formatting.javascriptserializer.0.9.4.nupkg.sha512",
-        "webapicontrib.formatting.javascriptserializer.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -1137,34 +1085,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "O pacote WebApiContrib.Formatting.JavaScriptSerializer 0.9.4 não é compatível com monoandroid81 (MonoAndroid,Version=v8.1). O pacote WebApiContrib.Formatting.JavaScriptSerializer 0.9.4 dá suporte a: net40 (.NETFramework,Version=v4.0)",
-      "libraryId": "WebApiContrib.Formatting.JavaScriptSerializer",
-      "targetGraphs": [
-        "MonoAndroid,Version=v8.1"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "O pacote Microsoft.AspNet.WebApi.Client 4.0.20710 não é compatível com monoandroid81 (MonoAndroid,Version=v8.1). O pacote Microsoft.AspNet.WebApi.Client 4.0.20710 dá suporte a: net40 (.NETFramework,Version=v4.0)",
-      "libraryId": "Microsoft.AspNet.WebApi.Client",
-      "targetGraphs": [
-        "MonoAndroid,Version=v8.1"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "O pacote Microsoft.Net.Http 2.0.20710 não é compatível com monoandroid81 (MonoAndroid,Version=v8.1). O pacote Microsoft.Net.Http 2.0.20710 dá suporte a:\r\n  - net40 (.NETFramework,Version=v4.0)\r\n  - net45 (.NETFramework,Version=v4.5)",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        "MonoAndroid,Version=v8.1"
-      ]
-    }
-  ]
+  }
 }
