@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -20,15 +21,31 @@ namespace ToDeOlho
 
         private async void btn_salvarPublicacao_Clicked(object sender, EventArgs e)
         {
-            Publicacao publicacao = new Publicacao();
-            publicacao.Titulo = Titulo_entry.Text;
-            publicacao.Data = DateTime.Now.ToString("dd/MM/yyyy");
+            await RetrieveLocation();
+        }
 
-            Repository repository = Repository.Instance;
-
-            repository.addItems(publicacao);
-
-            await Navigation.PopAsync(true);
+        private async Task RetrieveLocation()
+        {
+            try
+            {
+                var location = await Geolocation.GetLastKnownLocationAsync();
+                Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                await DisplayAlert("Handle not supported on device exception",
+                    fnsEx.Message, "Ok");
+            }
+            catch (PermissionException pEx)
+            {
+                await DisplayAlert("Handle permission exception",
+                pEx.Message, "Ok");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Unable to get location",
+                ex.Message, "Ok");
+            }
         }
     }
 }
