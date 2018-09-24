@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "Microsoft.AspNet.WebApi.Client/4.0.20710": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "[2.0.20710, 2.1.0)",
+          "Newtonsoft.Json": "4.5.6"
+        }
+      },
+      "Microsoft.Net.Http/2.0.20710": {
+        "type": "package"
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -9,15 +19,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "RestSharp/106.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/RestSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/RestSharp.dll": {}
         }
       },
       "System.Drawing.Primitives/4.3.0": {
@@ -36,6 +37,12 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "4.0.20710"
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -415,7 +422,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Drawing.Primitives": "4.3.0"
+          "Modelo": "1.0.0",
+          "System.Drawing.Primitives": "4.3.0",
+          "WebApiContrib.Formatting.JavaScriptSerializer": "0.9.4"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -428,6 +437,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
           "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
@@ -444,7 +454,6 @@
           "Autenticacao": "1.0.0",
           "Modelo": "1.0.0",
           "Newtonsoft.Json": "11.0.2",
-          "RestSharp": "106.4.0",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.2.0.839982"
         },
@@ -458,6 +467,31 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNet.WebApi.Client/4.0.20710": {
+      "sha512": "BwFtW0cGr8tg02XalvF8MmznOpYrhquD2eXWI0oF3LLSqLMFoFkb8Pmke/7SnqkiNc+YfsaUqdXEKbjhv1Ctrw==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/4.0.20710",
+      "files": [
+        "lib/net40/System.Net.Http.Formatting.dll",
+        "lib/net40/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.Net.Http/2.0.20710": {
+      "sha512": "OsB/5QO9tYJRLYIgBOhRl4Tssh3pw7+UAO9tMGMBg63f98GfjsniVIwLWRC0vcRr/F6HLP/NvRlHyGBhtD7Bmw==",
+      "type": "package",
+      "path": "microsoft.net.http/2.0.20710",
+      "files": [
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net45/_._",
+        "microsoft.net.http.2.0.20710.nupkg.sha512",
+        "microsoft.net.http.nuspec"
+      ]
+    },
     "Newtonsoft.Json/11.0.2": {
       "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
@@ -484,20 +518,6 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
-      ]
-    },
-    "RestSharp/106.4.0": {
-      "sha512": "3n3y37qEhAQ7FzT7VKT2RI/1OhZjEjaghwsOtRsm8rVq3LQqldkt6Rj3BIY19HFxV2h/ZqOlm4yhReDfELvNKg==",
-      "type": "package",
-      "path": "restsharp/106.4.0",
-      "files": [
-        ".signature.p7s",
-        "lib/net452/RestSharp.dll",
-        "lib/net452/RestSharp.xml",
-        "lib/netstandard2.0/RestSharp.dll",
-        "lib/netstandard2.0/RestSharp.xml",
-        "restsharp.106.4.0.nupkg.sha512",
-        "restsharp.nuspec"
       ]
     },
     "System.Drawing.Primitives/4.3.0": {
@@ -571,6 +591,16 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
+      "sha512": "8+K9WEklfCIC+guM71L51adHPK+KkEXWWsVn0TQP435J8rdET6Ta1e+WsXg5gxdwI7Vx0R7zSaYQw8m8I0NsFg==",
+      "type": "package",
+      "path": "webapicontrib.formatting.javascriptserializer/0.9.4",
+      "files": [
+        "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll",
+        "webapicontrib.formatting.javascriptserializer.0.9.4.nupkg.sha512",
+        "webapicontrib.formatting.javascriptserializer.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -1044,31 +1074,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/vitornunes/.nuget/packages/": {}
+    "C:\\Users\\jthomaz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho.Android/ToDeOlho.Android.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
       "projectName": "ToDeOlho.Android",
-      "projectPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho.Android/ToDeOlho.Android.csproj",
-      "packagesPath": "/Users/vitornunes/.nuget/packages/",
-      "outputPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho.Android/obj",
+      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\ToDeOlho.Android.csproj",
+      "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho.Android\\obj\\",
       "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/vitornunes/.config/NuGet/NuGet.Config"
+        "C:\\Users\\jthomaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/ToDeOlho.csproj": {
-              "projectPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/ToDeOlho.csproj"
+            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj"
             }
           }
         }
@@ -1077,32 +1110,61 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "3.2.0.839982"
-          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
-            "version": "27.0.2.1"
-          },
-          "Xamarin.Android.Support.v7.AppCompat": {
-            "target": "Package",
-            "version": "27.0.2.1"
+            "version": "[27.0.2.1, )"
           },
           "Xamarin.Android.Support.v4": {
             "target": "Package",
-            "version": "27.0.2.1"
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.v7.AppCompat": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
           },
           "Xamarin.Android.Support.v7.CardView": {
             "target": "Package",
-            "version": "27.0.2.1"
+            "version": "[27.0.2.1, )"
           },
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
-            "version": "27.0.2.1"
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[3.2.0.839982, )"
           }
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "O pacote WebApiContrib.Formatting.JavaScriptSerializer 0.9.4 não é compatível com monoandroid81 (MonoAndroid,Version=v8.1). O pacote WebApiContrib.Formatting.JavaScriptSerializer 0.9.4 dá suporte a: net40 (.NETFramework,Version=v4.0)",
+      "libraryId": "WebApiContrib.Formatting.JavaScriptSerializer",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "O pacote Microsoft.AspNet.WebApi.Client 4.0.20710 não é compatível com monoandroid81 (MonoAndroid,Version=v8.1). O pacote Microsoft.AspNet.WebApi.Client 4.0.20710 dá suporte a: net40 (.NETFramework,Version=v4.0)",
+      "libraryId": "Microsoft.AspNet.WebApi.Client",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "O pacote Microsoft.Net.Http 2.0.20710 não é compatível com monoandroid81 (MonoAndroid,Version=v8.1). O pacote Microsoft.Net.Http 2.0.20710 dá suporte a:\r\n  - net40 (.NETFramework,Version=v4.0)\r\n  - net45 (.NETFramework,Version=v4.5)",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "MonoAndroid,Version=v8.1"
+      ]
+    }
+  ]
 }

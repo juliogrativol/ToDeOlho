@@ -4,7 +4,7 @@ namespace Autenticacao
 {
     public class Login
     {
-        public String email { get; set; }
-        public String senha { get; set; }
+        public string email { get; set; }
+        public string senha { get; set; }
     }
 }

@@ -2090,9 +2090,6 @@ namespace ToDeOlho.Droid
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7F010002
-			public const int 44326 = 2130771970;
-			
 			// aapt resource value: 0x7F090001
 			public const int abc_ab_share_pack_mtrl_alpha = 2131296257;
 			
@@ -2896,6 +2893,9 @@ namespace ToDeOlho.Droid
 			
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
+			
+			// aapt resource value: 0x7F010002
+			public const int logo = 2130771970;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;

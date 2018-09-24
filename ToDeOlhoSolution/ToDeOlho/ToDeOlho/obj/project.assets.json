@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Microsoft.AspNet.WebApi.Client/4.0.20710": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "[2.0.20710, 2.1.0)",
+          "Newtonsoft.Json": "4.5.6"
+        },
+        "compile": {
+          "lib/net40/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.0.20710": {
+        "type": "package",
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -20,7 +42,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "NETStandard.Library/2.0.3": {
+      "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -42,15 +64,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "RestSharp/106.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/RestSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/RestSharp.dll": {}
         }
       },
       "System.Drawing.Primitives/4.3.0": {
@@ -96,6 +109,18 @@
           "ref/netstandard1.5/_._": {}
         }
       },
+      "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "4.0.20710"
+        },
+        "compile": {
+          "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll": {}
+        },
+        "runtime": {
+          "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll": {}
+        }
+      },
       "Xamarin.Essentials/0.10.0-preview": {
         "type": "package",
         "dependencies": {
@@ -129,7 +154,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Drawing.Primitives": "4.3.0"
+          "Modelo": "1.0.0",
+          "System.Drawing.Primitives": "4.3.0",
+          "WebApiContrib.Formatting.JavaScriptSerializer": "0.9.4"
         },
         "compile": {
           "bin/placeholder/Autenticacao.dll": {}
@@ -142,6 +169,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
           "System.Drawing.Primitives": "4.3.0"
         },
         "compile": {
@@ -154,6 +182,31 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNet.WebApi.Client/4.0.20710": {
+      "sha512": "BwFtW0cGr8tg02XalvF8MmznOpYrhquD2eXWI0oF3LLSqLMFoFkb8Pmke/7SnqkiNc+YfsaUqdXEKbjhv1Ctrw==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/4.0.20710",
+      "files": [
+        "lib/net40/System.Net.Http.Formatting.dll",
+        "lib/net40/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.Net.Http/2.0.20710": {
+      "sha512": "OsB/5QO9tYJRLYIgBOhRl4Tssh3pw7+UAO9tMGMBg63f98GfjsniVIwLWRC0vcRr/F6HLP/NvRlHyGBhtD7Bmw==",
+      "type": "package",
+      "path": "microsoft.net.http/2.0.20710",
+      "files": [
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net45/_._",
+        "microsoft.net.http.2.0.20710.nupkg.sha512",
+        "microsoft.net.http.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -180,13 +233,14 @@
         "runtime.json"
       ]
     },
-    "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+    "NETStandard.Library/2.0.1": {
+      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "type": "package",
-      "path": "netstandard.library/2.0.3",
+      "path": "netstandard.library/2.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -303,7 +357,7 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.3.nupkg.sha512",
+        "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -333,20 +387,6 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
-      ]
-    },
-    "RestSharp/106.4.0": {
-      "sha512": "3n3y37qEhAQ7FzT7VKT2RI/1OhZjEjaghwsOtRsm8rVq3LQqldkt6Rj3BIY19HFxV2h/ZqOlm4yhReDfELvNKg==",
-      "type": "package",
-      "path": "restsharp/106.4.0",
-      "files": [
-        ".signature.p7s",
-        "lib/net452/RestSharp.dll",
-        "lib/net452/RestSharp.xml",
-        "lib/netstandard2.0/RestSharp.dll",
-        "lib/netstandard2.0/RestSharp.xml",
-        "restsharp.106.4.0.nupkg.sha512",
-        "restsharp.nuspec"
       ]
     },
     "System.Drawing.Primitives/4.3.0": {
@@ -591,6 +631,16 @@
         "system.runtime.extensions.nuspec"
       ]
     },
+    "WebApiContrib.Formatting.JavaScriptSerializer/0.9.4": {
+      "sha512": "8+K9WEklfCIC+guM71L51adHPK+KkEXWWsVn0TQP435J8rdET6Ta1e+WsXg5gxdwI7Vx0R7zSaYQw8m8I0NsFg==",
+      "type": "package",
+      "path": "webapicontrib.formatting.javascriptserializer/0.9.4",
+      "files": [
+        "lib/net40/WebApiContrib.Formatting.JavaScriptSerializer.dll",
+        "webapicontrib.formatting.javascriptserializer.0.9.4.nupkg.sha512",
+        "webapicontrib.formatting.javascriptserializer.nuspec"
+      ]
+    },
     "Xamarin.Essentials/0.10.0-preview": {
       "sha512": "oA8oAHIHf4ymPPQoi7sLKF0704fFgwoqmQDy1G1kOxXrEZF0W5XpTXS2y2h4/RC/7bn0DzhTS6wiC90Om4YSHA==",
       "type": "package",
@@ -781,46 +831,47 @@
     ".NETStandard,Version=v2.0": [
       "Autenticacao >= 1.0.0",
       "Modelo >= 1.0.0",
-      "NETStandard.Library >= 2.0.3",
+      "NETStandard.Library >= 2.0.1",
       "Newtonsoft.Json >= 11.0.2",
-      "RestSharp >= 106.4.0",
       "Xamarin.Essentials >= 0.10.0-preview",
       "Xamarin.Forms >= 3.2.0.839982"
     ]
   },
   "packageFolders": {
-    "/Users/vitornunes/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\jthomaz\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/ToDeOlho.csproj",
+      "projectUniqueName": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj",
       "projectName": "ToDeOlho",
-      "projectPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/ToDeOlho.csproj",
-      "packagesPath": "/Users/vitornunes/.nuget/packages/",
-      "outputPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/ToDeOlho/ToDeOlho/obj",
+      "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\ToDeOlho.csproj",
+      "packagesPath": "C:\\Users\\jthomaz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\ToDeOlho\\ToDeOlho\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/vitornunes/.config/NuGet/NuGet.Config"
+        "C:\\Users\\jthomaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/Autenticacao/Autenticacao.csproj": {
-              "projectPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/Autenticacao/Autenticacao.csproj"
+            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Autenticacao\\Autenticacao.csproj"
             },
-            "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/Modelo/Modelo.csproj": {
-              "projectPath": "/Users/vitornunes/dev/ToDeOlho/ToDeOlhoSolution/Modelo/Modelo.csproj"
+            "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Modelo\\Modelo.csproj": {
+              "projectPath": "C:\\Users\\jthomaz\\Desktop\\ToDeOlho\\ToDeOlhoSolution\\Modelo\\Modelo.csproj"
             }
           }
         }
@@ -834,27 +885,23 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "0.10.0-preview"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "3.2.0.839982"
-          },
-          "RestSharp": {
-            "target": "Package",
-            "version": "106.4.0"
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "11.0.2"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.3",
+            "version": "[2.0.1, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[11.0.2, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[0.10.0-preview, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[3.2.0.839982, )"
           }
         },
         "imports": [
@@ -864,5 +911,37 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Microsoft.AspNet.WebApi.Client 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Microsoft.AspNet.WebApi.Client",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Microsoft.Net.Http 2.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'WebApiContrib.Formatting.JavaScriptSerializer 0.9.4' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "WebApiContrib.Formatting.JavaScriptSerializer",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
