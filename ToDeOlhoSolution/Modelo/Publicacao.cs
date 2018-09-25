@@ -5,7 +5,12 @@ namespace Modelo
 {
     public class Publicacao
     {
+        public String Login { get; set; }
         public String Titulo { get; set; }
-        public String Data { get; set; }
+        public String Descricao { get; set; }
+        public String Latitude { get; set; }
+        public String Longitude { get; set; }
+        public String Altitude { get; set; }
+        public String Imagem { get; set; }
     }
 }
