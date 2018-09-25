@@ -1,4 +1,5 @@
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\ToDeOlho.Android.csprojAssemblyReference.cache
+C:\Users\jthomaz\.nuget\packages\xamarin.forms\3.2.0.839982\lib\MonoAndroid10\FormsViewGroup.dll
+C:\Users\jthomaz\.nuget\packages\xamarin.forms\3.2.0.839982\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\ToDeOlho.Android.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\ToDeOlho.Android.pdb
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\com.companyname.ToDeOlho.apk
@@ -9,6 +10,7 @@ C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\ToDeOlho.pdb
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\Modelo.pdb
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\Autenticacao.pdb
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\ToDeOlho.Android.csprojAssemblyReference.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\ToDeOlho.Android.csproj.CoreCompileInputs.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\XamlC.stamp
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\ToDeOlho.Android.csproj.CopyComplete
@@ -35,8 +37,6 @@ C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\R.cs.flag
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\R.txt
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\obj\Release\uploadflags.txt
-C:\Users\jthomaz\.nuget\packages\xamarin.forms\3.2.0.839982\lib\MonoAndroid10\FormsViewGroup.dll
-C:\Users\jthomaz\.nuget\packages\xamarin.forms\3.2.0.839982\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\ToDeOlho.Android.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\Mono.Android.pdb
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\ToDeOlho\ToDeOlho.Android\bin\Release\mscorlib.pdb

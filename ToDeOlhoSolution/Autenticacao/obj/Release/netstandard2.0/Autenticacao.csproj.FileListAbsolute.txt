@@ -1,12 +1,12 @@
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.csproj.CoreCompileInputs.cache
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.AssemblyInfoInputs.cache
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.AssemblyInfo.cs
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Release\netstandard2.0\Modelo.dll
-C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.csprojAssemblyReference.cache
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Release\netstandard2.0\Autenticacao.deps.json
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Release\netstandard2.0\Autenticacao.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Release\netstandard2.0\Autenticacao.pdb
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Release\netstandard2.0\Modelo.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\bin\Release\netstandard2.0\Modelo.pdb
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.csprojAssemblyReference.cache
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.csproj.CoreCompileInputs.cache
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.AssemblyInfoInputs.cache
+C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.AssemblyInfo.cs
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.csproj.CopyComplete
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.dll
 C:\Users\jthomaz\Desktop\ToDeOlho\ToDeOlhoSolution\Autenticacao\obj\Release\netstandard2.0\Autenticacao.pdb
