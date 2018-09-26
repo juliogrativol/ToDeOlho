@@ -48,5 +48,40 @@ namespace Autenticacao
 
             return json;
         }
+
+
+        public RetornoPublicacoes buscaPublicacoes(String login)
+        {
+            RetornoPublicacoes json = new RetornoPublicacoes();
+
+            try
+            {
+                string URL = "https://f12xi0nh5j.execute-api.us-east-1.amazonaws.com/dev/publicacoes?login="+login;
+              
+                System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
+                client.BaseAddress = new System.Uri(URL);
+                byte[] cred = UTF8Encoding.UTF8.GetBytes("username:password");
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(cred));
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+                HttpResponseMessage messge = client.GetAsync(URL).Result;
+                string description = string.Empty;
+                if (messge.IsSuccessStatusCode)
+                {
+                    string result = messge.Content.ReadAsStringAsync().Result;
+                    json = JsonConvert.DeserializeObject<RetornoPublicacoes>(result);
+                }
+                else
+                {
+                    json = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Problemas ao buscar publicações. Contacte do administrador!");
+            }
+
+            return json;
+        }
     }
 }

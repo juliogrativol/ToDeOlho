@@ -21,6 +21,8 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Image Source="ic_mac.png" HeightRequest="70" VerticalOptions="EndAndExpand"/>
+                    <Image x:Name="ImagePreview" WidthRequest="200" Margin="10,10,10,10" />
+                    <Button Text="Take Photo" Clicked="TakePhoto" FontSize="20" />
                     <Entry x:Name="Titulo_entry" Grid.Row="1" Placeholder="Título" PlaceholderColor="#bababa" FontSize="16"/>
                     <Entry x:Name="Descricao_entry" Grid.Row="2" Placeholder="Descrição" PlaceholderColor="#bababa" FontSize="16" />
                     <Button x:Name="Publicar_btn" Text="Publicar" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3" Clicked="btn_salvarPublicacao_Clicked"/>

@@ -5,6 +5,7 @@ namespace Modelo
 {
     public class Publicacao
     {
+        public String Origem { get; set; }
         public String Login { get; set; }
         public String Titulo { get; set; }
         public String Descricao { get; set; }

@@ -1,4 +1,5 @@
-﻿using Modelo;
+﻿using Autenticacao;
+using Modelo;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -18,11 +19,13 @@ namespace ToDeOlho
         public Publicacoes()
         {
             InitializeComponent();
-            Repository repository = Repository.Instance;
+            //Repository repository = Repository.Instance;
+            //Items = repository.getItems();
 
-            Items = repository.getItems();
+            PublicacaoService publicacaoSevice = new PublicacaoService();
+            RetornoPublicacoes retornoPublicacoes = publicacaoSevice.buscaPublicacoes("teste");
 
-            MyListView.ItemsSource = Items;
+            MyListView.ItemsSource = retornoPublicacoes.publicacoes;
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)

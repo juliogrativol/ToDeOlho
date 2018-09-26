@@ -1,5 +1,7 @@
 ﻿using Autenticacao;
 using Modelo;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
@@ -29,6 +31,7 @@ namespace ToDeOlho
                 var location = await Geolocation.GetLocationAsync();
 
                 Publicacao publicacao = new Publicacao();
+                publicacao.Origem = "APP";
                 publicacao.Login = "teste";
                 publicacao.Titulo = Titulo_entry.Text;
                 publicacao.Descricao = Descricao_entry.Text;
@@ -67,6 +70,36 @@ namespace ToDeOlho
                 await DisplayAlert("Unable to get location",
                 ex.Message, "Ok");
             }
+        }
+
+        private async void TakePhoto(object sender, EventArgs e)
+        {
+            await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsTakePhotoSupported ||
+                !CrossMedia.Current.IsCameraAvailable)
+            {
+                await DisplayAlert("No Camera", "No camera detected.", "Ok");
+                return;
+            }
+
+            var file = await CrossMedia.Current.TakePhotoAsync(
+                new StoreCameraMediaOptions
+                {
+                    SaveToAlbum = true,
+                    Directory = "CameraAppAlbum",
+                    PhotoSize = PhotoSize.Small
+                }
+            );
+
+            if (file == null)
+                return;
+
+            ImagePreview.Source = ImageSource.FromStream(() => file.GetStream());
+
+            //Upload para o Azure
+            //BlobService blobService = new BlobService();
+            //await blobService.UploadImage("photos", Guid.NewGuid().ToString() + ".jpg", file.GetStream(), "image/jpg");
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "457283a9081f1b4e660586f853ae4dfd6e120714"
+    "signature": "31ef14c1dd31a4baaca3632e3c6822af23a61040"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,6 +13,7 @@
           "Modelo": "1.0.0",
           "NETStandard.Library": "2.0.1",
           "Newtonsoft.Json": "11.0.2",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "0.10.0-preview",
           "Xamarin.Forms": "3.3.0.840541-pre1"
         },
@@ -30,6 +31,11 @@
       "Newtonsoft.Json/11.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {}
         }
       },
       "System.Drawing.Primitives/4.3.0": {
@@ -59,6 +65,14 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "dependencies": {
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/0.10.0-preview": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -77,7 +91,8 @@
       "Autenticacao/1.0.0": {
         "dependencies": {
           "Modelo": "1.0.0",
-          "System.Drawing.Primitives": "4.3.0"
+          "System.Drawing.Primitives": "4.3.0",
+          "Xam.Plugin.Media": "4.0.1.5"
         },
         "runtime": {
           "Autenticacao.dll": {}
@@ -86,7 +101,8 @@
       "Modelo/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
-          "System.Drawing.Primitives": "4.3.0"
+          "System.Drawing.Primitives": "4.3.0",
+          "Xam.Plugin.Media": "4.0.1.5"
         },
         "runtime": {
           "Modelo.dll": {}
@@ -128,6 +144,13 @@
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
+    "Plugin.Permissions/3.0.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "path": "plugin.permissions/3.0.0.12",
+      "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
+    },
     "System.Drawing.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -155,6 +178,13 @@
       "sha512": "sha512-guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
       "path": "system.runtime.extensions/4.3.0",
       "hashPath": "system.runtime.extensions.4.3.0.nupkg.sha512"
+    },
+    "Xam.Plugin.Media/4.0.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
+      "path": "xam.plugin.media/4.0.1.5",
+      "hashPath": "xam.plugin.media.4.0.1.5.nupkg.sha512"
     },
     "Xamarin.Essentials/0.10.0-preview": {
       "type": "package",
