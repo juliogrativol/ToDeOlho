@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.Permissions;
+using Plugin.CurrentActivity;
 
 namespace ToDeOlho.Droid
 {
@@ -21,6 +22,7 @@ namespace ToDeOlho.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            CrossCurrentActivity.Current.Init(this, bundle);
 
             //#### Necessário para trabalhar com o Xamarin.Essentials no Android #####
             Xamarin.Essentials.Platform.Init(this, bundle);
@@ -31,6 +33,7 @@ namespace ToDeOlho.Droid
         //#### Necessário para trabalhar com o Xamarin.Essentials no Android #####
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
+            Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);

@@ -3,6 +3,7 @@ using Modelo;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
+using System.IO;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 
@@ -14,7 +15,11 @@ namespace ToDeOlho
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class NovaPublicacao : ContentPage
 	{
-		public NovaPublicacao ()
+
+        MediaFile file;
+
+
+        public NovaPublicacao ()
 		{
 			InitializeComponent ();
 		}
@@ -28,31 +33,49 @@ namespace ToDeOlho
         {
             try
             {
-                var location = await Geolocation.GetLocationAsync();
-
-                Publicacao publicacao = new Publicacao();
-                publicacao.Origem = "APP";
-                publicacao.Login = "teste";
-                publicacao.Titulo = Titulo_entry.Text;
-                publicacao.Descricao = Descricao_entry.Text;
-                publicacao.Longitude = location.Longitude.ToString();
-                publicacao.Altitude = location.Altitude.ToString();
-                publicacao.Latitude = location.Latitude.ToString();
-                publicacao.Imagem = "xxxxxxxxx";
-
-                PublicacaoService publicacaoService = new PublicacaoService();
-                Retorno retorno = publicacaoService.NovaPublicacao(publicacao);
-
-                if (retorno != null)
+                if (Titulo_entry.Text.Equals(""))
                 {
-                    await DisplayAlert("",
-                    "Publicação criada com sucesso!", "Ok");
-                    await Navigation.PushAsync(new Publicacoes());
+                    await DisplayAlert("Atenção!",
+                    "Título deve ser preenchido!", "Ok");
+                }
+                else if (Descricao_entry.Text.Equals(""))
+                {
+                    await DisplayAlert("Atenção!",
+                    "Descrição deve ser preenchida!", "Ok");
+                }
+                else if (file == null)
+                {
+                    await DisplayAlert("Atenção!",
+                    "Foto é obrigatória!", "Ok");
                 }
                 else
                 {
-                    await DisplayAlert("Atenção!",
-                    "Problemas ao gravar publicação!", "Ok");
+                    var location = await Geolocation.GetLocationAsync();
+
+                    Publicacao publicacao = new Publicacao();
+                    publicacao.Origem = "APP";
+                    publicacao.Login = "teste";
+                    publicacao.Titulo = Titulo_entry.Text;
+                    publicacao.Descricao = Descricao_entry.Text;
+                    publicacao.Longitude = location.Longitude.ToString();
+                    publicacao.Altitude = location.Altitude.ToString();
+                    publicacao.Latitude = location.Latitude.ToString();
+                    publicacao.Imagem = await ConvertToBase64(file.GetStream());
+
+                    PublicacaoService publicacaoService = new PublicacaoService();
+                    Retorno retorno = publicacaoService.NovaPublicacao(publicacao);
+
+                    if (retorno != null)
+                    {
+                        await DisplayAlert("",
+                        "Publicação criada com sucesso!", "Ok");
+                        await Navigation.PushAsync(new Publicacoes());
+                    }
+                    else
+                    {
+                        await DisplayAlert("Atenção!",
+                        "Problemas ao gravar publicação!", "Ok");
+                    }
                 }
             }
             catch (FeatureNotSupportedException fnsEx)
@@ -72,6 +95,13 @@ namespace ToDeOlho
             }
         }
 
+        private async Task<String> ConvertToBase64(Stream stream)
+        {
+            var bytes = new byte[stream.Length];
+            await stream.ReadAsync(bytes, 0, (int)stream.Length);
+            return System.Convert.ToBase64String(bytes);
+        }
+
         private async void TakePhoto(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
@@ -83,7 +113,7 @@ namespace ToDeOlho
                 return;
             }
 
-            var file = await CrossMedia.Current.TakePhotoAsync(
+            file = await CrossMedia.Current.TakePhotoAsync(
                 new StoreCameraMediaOptions
                 {
                     SaveToAlbum = true,
@@ -93,8 +123,14 @@ namespace ToDeOlho
             );
 
             if (file == null)
+            {
                 return;
-
+            }
+            else
+            {
+                TakePhoto_btn.IsVisible = false;
+            }
+            
             ImagePreview.Source = ImageSource.FromStream(() => file.GetStream());
 
             //Upload para o Azure
